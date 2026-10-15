@@ -1,0 +1,43 @@
+name: Mise à jour du tableau de bord
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "donnees/**"
+      - "scripts/**"
+      - ".github/workflows/mise-a-jour-tableau.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tableau-de-bord
+  cancel-in-progress: false
+
+jobs:
+  generer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Générer README.md
+        run: python scripts/generer_tableau.py
+
+      - name: Enregistrer les fichiers mis à jour
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "Rien à mettre à jour."
+          else
+            git commit -m "Mise à jour automatique du tableau de bord"
+            git pull --rebase
+            git push
+          fi
