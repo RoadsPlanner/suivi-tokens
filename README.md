@@ -27,5 +27,10 @@
    ```
 3. Cliquer sur **Commit changes**.
 
+Le tableau ci-dessus se met à jour tout seul en moins d'une minute (onglet **Actions**).
+
 - Plusieurs lignes pour le même membre et la même semaine sont **additionnées**.
+- Pour corriger une valeur, modifier ou supprimer la ligne concernée.
+- Pour ajouter / retirer un membre : **[donnees/membres.csv](https://github.com/RoadsPlanner/suivi-tokens/edit/main/donnees/membres.csv)**.
+- Le fichier CSV s'ouvre aussi dans Excel si besoin.
 - Si une ligne est mal écrite, l'action GitHub échoue (croix rouge ❌) et indique la ligne à corriger ; le tableau garde alors sa version précédente.
