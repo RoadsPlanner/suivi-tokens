@@ -1,0 +1,51 @@
+{
+  "membre": "Ahmed",
+  "debutSemaine1": "2026-08-17",
+  "dossiersConversations": [
+    "~/.gemini/antigravity-ide/conversations",
+    "~/.gemini/antigravity/conversations"
+  ],
+  "sousProjets": [
+    {
+      "nom": "SAE / Trek",
+      "dossiers": [
+        "BUT3/SAE",
+        "BUT3/SAE/projet trek",
+        "claude.ai"
+      ],
+      "motsCles": [
+        "trek"
+      ]
+    },
+    {
+      "nom": "SAE / Roadtrip",
+      "dossiers": [
+        "BUT3/SAE",
+        "BUT3/SAE/skelette_roadtrip_flutter",
+        "BUT3/SAE/skelette_roadtrip_pwa",
+        "claude.ai"
+      ],
+      "motsCles": [
+        "road.?trip"
+      ]
+    },
+    {
+      "nom": "SAE / Suivi tokens",
+      "dossiers": [
+        "BUT3/SAE/suivi-tokens",
+        "BUT3/SAE/suivi-tokens/script_recup_token_ide"
+      ],
+      "motsCles": [
+        "."
+      ]
+    }
+  ],
+  "raccourcis": [
+    "SAE",
+    "Trek",
+    "Roadtrip"
+  ],
+  "filtreParDefaut": "SAE",
+  "dossierExportClaudeAi": "exports-claude-ai",
+  "caracteresParToken": 3.5
+}
