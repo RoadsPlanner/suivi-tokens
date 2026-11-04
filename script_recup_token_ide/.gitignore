@@ -1,7 +1,0 @@
-# Exports générés par suivi_tokens.js (données personnelles)
-*.csv
-*.json
-!config.json
-*.html
-!modele_tableau_de_bord.html
-exports-claude-ai/
